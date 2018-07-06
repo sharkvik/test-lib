@@ -4,20 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestLibModule } from 'test-lib';
-import { TestLibService } from 'projects/test-lib/src/public_api';
+import { EmptyComponent } from './app/empty/empty.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmptyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TestLibModule
   ],
-  providers: [
-    TestLibService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

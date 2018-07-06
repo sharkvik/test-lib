@@ -16,6 +16,6 @@ export class TestLibComponent implements OnInit {
   constructor(public testLibService: TestLibService) { }
 
   public ngOnInit() {
-    this.testLibService.label = "shared-service";
+    this.testLibService.label = 'shared-service';
   }
 }

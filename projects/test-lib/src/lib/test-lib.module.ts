@@ -5,6 +5,7 @@ import { TestLibComponent } from './test-lib.component';
   imports: [
   ],
   declarations: [TestLibComponent],
-  exports: [TestLibComponent]
+  exports: [TestLibComponent],
+  entryComponents: [TestLibComponent]
 })
 export class TestLibModule { }
