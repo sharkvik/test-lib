@@ -1,19 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { TestLibService } from './test-lib.service';
 
 @Component({
   selector: 'lib-test-lib',
   template: `
     <p>
-      test-lib works!
+      test-lib works!<br/>
+      {{this.testLibService.label}}
     </p>
   `,
   styles: []
 })
 export class TestLibComponent implements OnInit {
 
-  constructor() { }
+  constructor(public testLibService: TestLibService) { }
 
-  ngOnInit() {
+  public ngOnInit() {
+    this.testLibService.label = "shared-service";
   }
-
 }
