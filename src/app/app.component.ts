@@ -11,8 +11,6 @@ import { TestLibService } from 'test-lib';
       </h1>
     </div>
     <h2>Here are some links to help you start: </h2>
-    <lib-test-lib></lib-test-lib>
-    {{testLibService.label}}
     <ul>
       <li>
         <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
@@ -32,13 +30,9 @@ import { TestLibService } from 'test-lib';
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'app';
   ngAfterViewInit(): void {
-    // this.testLibService.label = "service-inside";
-    console.log(this.testLibService.label);
   }
   ngOnInit(): void {
   }
-  constructor(public testLibService: TestLibService) {
-    this.testLibService.label = 'service-inside';
-    console.log(this.testLibService.label);
+  constructor() {
   }
 }
