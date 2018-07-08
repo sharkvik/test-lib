@@ -4,17 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestLibModule } from 'test-lib';
-import { EmptyComponent } from './app/empty/empty.component';
+import {NvmLoaderModule} from 'nvm-loader';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    EmptyComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TestLibModule
+    TestLibModule,
+    NvmLoaderModule.forRoot([{path: 'lazy', loadChildren: './lazy/lazy.module#LazyModule'}])
   ],
   providers: [],
   bootstrap: [AppComponent]

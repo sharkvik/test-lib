@@ -23,7 +23,8 @@
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26",
-    "nvm-test-lib": "0.0.1"
+    "nvm-test-lib": "0.0.1",
+    "nvm-loader":"0.0.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.8",

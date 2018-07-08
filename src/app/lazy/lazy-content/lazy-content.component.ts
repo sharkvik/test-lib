@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-empty',
+  selector: 'app-lazy-content',
   template: `
     <p>
-      empty works!
+      lazy-content works!
     </p>
   `,
   styles: []
 })
-export class EmptyComponent implements OnInit {
+export class LazyContentComponent implements OnInit {
 
   constructor() { }
 

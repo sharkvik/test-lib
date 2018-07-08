@@ -25,19 +25,20 @@ import { TestLibService } from 'test-lib';
       </li>
     </ul>
     <router-outlet></router-outlet>
+    <nvm-loader [route]="'./lazy/lazy.module#LazyModule'"></nvm-loader>
   `,
   styles: []
 })
 export class AppComponent implements OnInit, AfterViewInit {
+  title = 'app';
   ngAfterViewInit(): void {
     // this.testLibService.label = "service-inside";
     console.log(this.testLibService.label);
   }
   ngOnInit(): void {
   }
-  title = 'app';
-  constructor(public testLibService: TestLibService){
-    this.testLibService.label = "service-inside";
+  constructor(public testLibService: TestLibService) {
+    this.testLibService.label = 'service-inside';
     console.log(this.testLibService.label);
   }
 }
