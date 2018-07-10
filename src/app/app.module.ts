@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestLibModule } from 'test-lib';
-import {NvmLoaderModule} from 'nvm-loader';
+import { NvmLoaderModule } from 'nvm-loader';
 
 @NgModule({
   declarations: [
