@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LazyContentComponent } from './lazy-content/lazy-content.component';
-import { TestLibModule } from 'test-lib';
 
 @NgModule({
   imports: [
-    CommonModule,
-    TestLibModule
+    CommonModule
   ],
   declarations: [LazyContentComponent],
   entryComponents: [LazyContentComponent]

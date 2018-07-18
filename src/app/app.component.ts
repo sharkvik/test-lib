@@ -1,5 +1,4 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { TestLibService } from 'test-lib';
 
 @Component({
   selector: 'app-root',
